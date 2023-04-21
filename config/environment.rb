@@ -11,7 +11,7 @@ ActionMailer::Base.smtp_settings = {
   :authentication => :plain,
   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-  :domain         => 'bewd-twitter-advanced.herokuapp.com',
+  :domain         => ENV['MAILGUN_DOMAIN'],
   :enable_starttls_auto => true
 
 }
